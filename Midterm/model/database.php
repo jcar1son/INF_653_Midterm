@@ -9,10 +9,10 @@ class Database {
 
     //sets the database as an object
     public function __construct(){
-        self::$host = getenv('SQL_HOST') ? getenv('SQL_HOST') : 'localhost';
-        self::$dbname = getenv('SQL_DB') ? getenv('SQL_DB') : 'zippyusedautos';
-        self::$username = getenv('SQL_USER') ? getenv('SQL_USER') : 'root';
-        self::$password = getenv('SQL_PW') ? getenv('SQL_PW') : '';
+        self::$host = getenv('SQL_HOST') ? getenv('SQL_HOST') : 'r4wkv4apxn9btls2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com';
+        self::$dbname = getenv('SQL_DB') ? getenv('SQL_DB') : 'yuefsmsqygoiygeo';
+        self::$username = getenv('SQL_USER') ? getenv('SQL_USER') : 'msbgywaq1t4h7vcw';
+        self::$password = getenv('SQL_PW') ? getenv('SQL_PW') : 'vhv8gmngff4nc4yq';
         self::$dsn = 'mysql:host=' . self::$host . ';dbname=' . self::$dbname;
     }
 
